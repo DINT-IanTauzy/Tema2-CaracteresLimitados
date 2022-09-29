@@ -13,8 +13,8 @@
         </LinearGradientBrush>
     </Window.Background>
     <Grid Margin="0,0,2,0">
-        <TextBox x:Name="Caracteres_TextBox" HorizontalAlignment="Left" Height="403" Margin="34,26,-133,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="775" TextChanged="TextBox_TextChanged" MaxLength="140"/>
-        <TextBlock x:Name="LimiteCaracteres_TextBlock" HorizontalAlignment="Left" Margin="732,434,0,0" TextWrapping="Wrap" Text="0/140" VerticalAlignment="Top" Height="24" Width="77" FontSize="18"/>
+        <TextBox x:Name="Caracteres_TextBox" HorizontalAlignment="Left" Height="403" Margin="34,26,-133,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="775" TextChanged="TextBox_TextChanged" MaxLength="140" KeyDown="ApretaEnter" AcceptsReturn="True"/>
+        <TextBlock x:Name="LimiteCaracteres_TextBlock" HorizontalAlignment="Left" Margin="732,434,0,0" TextWrapping="Wrap" Text="/140" VerticalAlignment="Top" Height="24" Width="77" FontSize="18"/>
 
     </Grid>
 </Window>

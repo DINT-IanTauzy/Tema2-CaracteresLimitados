@@ -23,23 +23,31 @@ namespace Tema2_CaracteresLimitados
         public MainWindow()
         {
             InitializeComponent();
+            LimiteCaracteres_TextBlock.Text = caracteres + LimiteCaracteres_TextBlock.Text;
         }
+        //public int cont = 0;
+        public int maximoCaracteres = 140;
+        private int caracteres = 0;
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            int cont = 0;
-            //Caracteres_TextBox.Text.Length
-            /*if (Caracteres_TextBox.Text != "")
+            caracteres = Caracteres_TextBox.Text.Length;
+            if (caracteres < maximoCaracteres)
             {
-               // cont++;
-                //LimiteCaracteres_TextBlock.Text = $"{cont}/140";
-
-                while (Caracteres_TextBox.Text != "")
-                {
-                    cont++;
-                    LimiteCaracteres_TextBlock.Text = $"{cont}/140";
-                }
-            }*/
+                LimiteCaracteres_TextBlock.Text = caracteres + "/140"; 
+            }
+            else if(caracteres >= maximoCaracteres)
+            {
+                LimiteCaracteres_TextBlock.Text = caracteres + "/140";
+                Caracteres_TextBox.IsReadOnly = true;
+            }
         }
+
+        private void ApretaEnter(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+                LimiteCaracteres_TextBlock.Text += "\n";
+        }
+
     }
 }
