@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tema2_CaracteresLimitados"
         mc:Ignorable="d"
-        Title="Caracteres Limitados" Height="519.027" Width="930.088" Icon="128.ico">
+        Title="Caracteres Limitados" Height="519.027" Width="890.344" Icon="128.ico">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="White" Offset="1"/>
@@ -13,8 +13,8 @@
         </LinearGradientBrush>
     </Window.Background>
     <Grid Margin="0,0,2,0">
-        <TextBox x:Name="Caracteres_TextBox" HorizontalAlignment="Left" Height="403" Margin="34,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="822" TextChanged="TextBox_TextChanged" MaxLength="140"/>
-        <TextBlock x:Name="LimiteCaracteres_TextBlock" HorizontalAlignment="Left" Margin="803,434,0,0" TextWrapping="Wrap" Text="0/140" VerticalAlignment="Top" Height="24" Width="77" FontSize="18"/>
+        <TextBox x:Name="Caracteres_TextBox" HorizontalAlignment="Left" Height="403" Margin="34,26,-133,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="775" TextChanged="TextBox_TextChanged" MaxLength="140"/>
+        <TextBlock x:Name="LimiteCaracteres_TextBlock" HorizontalAlignment="Left" Margin="732,434,0,0" TextWrapping="Wrap" Text="0/140" VerticalAlignment="Top" Height="24" Width="77" FontSize="18"/>
 
     </Grid>
 </Window>
